@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 const rooms = [
   {
     title: 'Executive Suite',
-    image: '/massage.jpg',
+    image: '/massage-room.jpg',
   },
   {
     title: 'Superior Deluxe',
@@ -43,13 +43,13 @@ export function Rooms() {
             transition={{ duration: 0.6 }}
             className='md:col-span-2 flex flex-col justify-center'
           >
-            <h2 className='text-xl md:text-2xl text-muted-foreground mb-2'>
+            <h2 className='text-xl md:text-xl text-muted-foreground mb-2'>
               Explore Our
             </h2>
-            <h3 className='text-4xl md:text-6xl font-serif font-bold text-foreground mb-6'>
+            <h3 className='text-4xl md:text-6xl font-serif font-medium text-foreground mb-6'>
               Rooms
             </h3>
-            <p className='text-base text-muted-foreground mb-8 leading-relaxed'>
+            <p className='text-base font-serif leading-8 text-muted-foreground mb-8'>
               With 56 well appointed accommodation rooms. We ensure our service
               delivery does not only give our guests a memorable experience but
               also leave as part of the Ciala Resort Family.

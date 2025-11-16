@@ -27,16 +27,17 @@ export function RoomCard({
       ref={cardRef}
       whileHover={{ y: -8 }}
       transition={{ duration: 0.3 }}
-      className='group relative overflow-hidden rounded-sm shadow-lg h-full'
+      className='group relative overflow-hidden  shadow-lg h-full'
     >
-      <div className='w-full h-[300px] relative'>
+      <div className='w-full h-122 relative '>
         <Image
           fill
           src={image || '/'}
           alt={title}
-          className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+          className='w-full h-full object-cover transition-transform duration-500 group-hover:brightness-70 group-hover:scale-105 ease-in-out'
         />
-        <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent' />
+        <div className='absolute inset-0 bg-linear-to-t from-black/60  via-black/20 to-transparent' />
+        <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border  z-10 h-[93%]  w-[95%] border-background/80 group-hover:border-primary duration-500 ease-in-out transition-all' />
       </div>
 
       <motion.div
@@ -50,10 +51,10 @@ export function RoomCard({
         }}
         className='absolute bottom-8 left-1/2 -translate-x-1/2 bg-white p-6 shadow-xl min-w-[280px] max-w-[90%]'
       >
-        <h3 className='text-2xl font-serif font-bold text-foreground mb-4 text-center'>
+        <h3 className='text-xl font-serif font-medium text-foreground mb-4 text-center'>
           {title}
         </h3>
-        <div className='flex flex-wrap justify-center gap-2 text-sm'>
+        <div className='flex flex-row justify-center gap-2 text-secondary text-sm'>
           <Button
             size='sm'
             variant='link'
