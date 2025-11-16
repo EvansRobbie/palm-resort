@@ -75,7 +75,7 @@ export function Introduction() {
             transition={{ duration: 0.8 }}
             className='hidden lg:flex relative flex-col h-full gap-4'
           >
-            <div className='w-80 relative h-[22.5rem] '>
+            <div className='w-80 relative h-90 '>
               <Image
                 src='/Welcome2.jpg'
                 alt='Conference Facilities'
@@ -83,7 +83,7 @@ export function Introduction() {
                 className='w-full h-full object-cover'
               />
             </div>
-            <div className='w-72 absolute -bottom-10 right-0 h-[26.5rem] '>
+            <div className='w-72 absolute -bottom-10 right-0 h-106 '>
               <Image
                 src='/Welcome3.jpg'
                 alt='Conference Facilities'
