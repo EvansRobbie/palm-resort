@@ -32,7 +32,7 @@ export function HealthClub() {
           <h2 className='text-5xl md:text-6xl font-serif font-medium text-foreground mb-6'>
             HEALTH CLUB
           </h2>
-          <p className='text-lg text-foreground/80'>
+          <p className='text-lg text-foreground font-serif'>
             Enjoy our pre heated rooftop pool, fitness club, spacious steam
             room, sauna and spa.
           </p>
@@ -45,7 +45,7 @@ export function HealthClub() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className='group relative overflow-hidden h-[31.5rem] aspect-square cursor-pointer'
+              className='group relative overflow-hidden h-126 aspect-square cursor-pointer'
             >
               <Image
                 src={facility.image || '/placeholder.svg'}
@@ -58,10 +58,10 @@ export function HealthClub() {
 
               {/* Text content */}
               <div className='absolute inset-0 flex flex-col items-center justify-center text-white'>
-                <h3 className='text-3xl md:text-4xl font-serif font-normal mb-3 transition-transform duration-300 group-hover:translate-y-[-8px]'>
+                <h3 className='text-3xl md:text-4xl font-serif font-normal mb-3 transition-transform duration-300 group-hover:-translate-y-2'>
                   {facility.title}
                 </h3>
-                <span className='text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300'>
+                <span className='text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 group-hover:-translate-y-2 traslate-y-0 ease-in-out'>
                   READ MORE
                 </span>
               </div>
