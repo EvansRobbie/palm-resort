@@ -60,7 +60,7 @@ export function Hero() {
               className='w-full h-full object-cover'
             />
           </AnimatePresence>
-          <div className='absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40' />
+          <div className='absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black/40' />
         </div>
 
         {/* Carousel Controls */}
