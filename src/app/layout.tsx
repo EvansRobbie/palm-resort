@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/navs/navbar';
+import { Newsletter } from '@/components/navs/newsletter';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -44,6 +45,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className='min-h-screen overflow-x-clip'>{children}</main>
+        <Newsletter/>
       </body>
     </html>
   );

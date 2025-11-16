@@ -22,14 +22,12 @@ export function Newsletter() {
       ref={ref}
       className='py-20 bg-[#2a3a2c] text-white relative overflow-hidden'
     >
-      {/* Background overlay */}
       <div className='absolute inset-0 opacity-20'>
         <div className="absolute inset-0 bg-[url('/resort-garden-night.jpg')] bg-cover bg-center" />
       </div>
 
-      <div className='container mx-auto px-4 relative z-10'>
+      <div className='container-fluid relative z-10'>
         <div className='grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center'>
-          {/* Left side - Newsletter signup */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -38,7 +36,7 @@ export function Newsletter() {
           >
             <div>
               <h2 className='text-xl text-white/80 mb-2'>Subscribe to Our</h2>
-              <h3 className='text-5xl md:text-6xl font-serif font-bold mb-6'>
+              <h3 className='text-5xl md:text-6xl font-serif font-medium mb-6'>
                 Newsletter
               </h3>
               <p className='text-white/80 mb-8'>
@@ -56,7 +54,7 @@ export function Newsletter() {
                   type='email'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className='bg-white/10 border-white/20 text-white placeholder:text-white/50'
+                  className='bg-white/10 border-white/20 text-white py-6 rounded-[4px] placeholder:text-white/50'
                   placeholder='your@email.com'
                 />
               </div>
@@ -73,23 +71,19 @@ export function Newsletter() {
                   className='text-sm text-white/80 leading-relaxed'
                 >
                   By entering your email address, you agree to receive emails
-                  from Ciala Resort (including but not limited to newsletters,
-                  promotional offers and announcements). Each email you receive
-                  from us provides a simple one-click method to unsubscribe from
-                  our mailing list.
+                  from Palm Oasis Resort (including but not limited to
+                  newsletters, promotional offers and announcements). Each email
+                  you receive from us provides a simple one-click method to
+                  unsubscribe from our mailing list.
                 </label>
               </div>
 
-              <Button
-                size='lg'
-                className='w-full md:w-auto bg-gold hover:bg-gold/90 text-white'
-              >
+              <Button size='lg' className='w-full md:w-auto py-5 rounded-[4px]'>
                 SUBSCRIBE NOW
               </Button>
             </div>
           </motion.div>
 
-          {/* Right side - Logo and links */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -101,14 +95,13 @@ export function Newsletter() {
               alt={DATA.title}
               width={200}
               height={200}
-              className='mx-auto mb-8'
+              className='mx-auto invert mb-8'
             />
             <h4 className='text-3xl font-serif font-bold mb-8'>{DATA.title}</h4>
             <p className='text-sm text-white/60 mb-2'>NAIROBI</p>
           </motion.div>
         </div>
 
-        {/* Footer Links */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -157,9 +150,7 @@ export function Newsletter() {
             </Link>
           </nav>
 
-          {/* Social Media Icons and Legal Links */}
           <div className='flex flex-col md:flex-row items-center justify-between gap-6 mb-6'>
-            {/* Social Media Icons */}
             <div className='flex items-center gap-4'>
               <span className='text-sm text-white/60'>Follow Us:</span>
               <div className='flex gap-3'>
@@ -202,7 +193,6 @@ export function Newsletter() {
               </div>
             </div>
 
-            {/* Legal Links */}
             <div className='flex flex-wrap items-center justify-center gap-4 text-sm'>
               <Link
                 href='/privacy-policy'
@@ -227,9 +217,9 @@ export function Newsletter() {
             </div>
           </div>
 
-          {/* Copyright */}
           <p className='text-center text-sm text-white/60'>
-            {DATA.title} – Kisumu © 2025 All Rights Reserved
+            {DATA.title} – Nairobi © {new Date().getFullYear()} All Rights
+            Reserved
           </p>
         </motion.div>
       </div>
