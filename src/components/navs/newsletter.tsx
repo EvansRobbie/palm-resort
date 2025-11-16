@@ -27,7 +27,7 @@ export function Newsletter() {
       </div>
 
       <div className='container-fluid relative z-10'>
-        <div className='grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center'>
+        <div className='grid md:grid-cols-2 gap-12  items-center'>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
