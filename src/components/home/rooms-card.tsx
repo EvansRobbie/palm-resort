@@ -37,7 +37,7 @@ export function RoomCard({
           className='w-full h-full object-cover transition-transform duration-500 group-hover:brightness-70 group-hover:scale-105 ease-in-out'
         />
         <div className='absolute inset-0 bg-linear-to-t from-black/60  via-black/20 to-transparent' />
-        <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border  z-10 h-[93%]  w-[95%] border-background/80 group-hover:border-primary duration-500 ease-in-out transition-all' />
+        <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border  z-10 h-[93%]  w-[95%] border-background/60 group-hover:border-primary duration-500 ease-in-out transition-all' />
       </div>
 
       <motion.div

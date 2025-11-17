@@ -78,7 +78,7 @@ export function ConferencesEvents() {
   }, [api]);
 
   return (
-    <section ref={ref} className='py-20 bg-white'>
+    <section ref={ref} className='py-20 pt-32 bg-white'>
       <div className='container mx-auto px-4 mb-12'>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

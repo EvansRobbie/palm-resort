@@ -46,7 +46,7 @@ export function Introduction() {
               <h3 className='text-5xl md:text-6xl  font-serif font-medium text-foreground leading-none'>
                 Palm Oasis Resort
               </h3>
-              <p className='text-xl md:text-2xl lg:text-3xl  text-foreground/90 pt-2'>
+              <p className='text-xl md:text-2xl   text-foreground/90 pt-2'>
                 Luxury Accommodation
               </p>
             </div>
