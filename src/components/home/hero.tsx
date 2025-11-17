@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { BookingWidget } from '../navs/booking-widget';
 
 const heroSlides = [
   {
@@ -113,6 +114,9 @@ export function Hero() {
               Know More
             </motion.button>
           </motion.div>
+        </div>
+        <div className='absolute bottom-0 left-0 right-0'>
+          <BookingWidget />
         </div>
       </div>
     </section>

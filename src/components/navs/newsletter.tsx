@@ -20,7 +20,7 @@ export function Newsletter() {
   return (
     <section
       ref={ref}
-      className='py-20 bg-[#2a3a2c] text-white relative overflow-hidden'
+      className='py-20 pb-36 bg-[#2a3a2c] text-white relative overflow-hidden'
     >
       <div className='absolute inset-0 opacity-20'>
         <div className="absolute inset-0 bg-[url('/resort-garden-night.jpg')] bg-cover bg-center" />

@@ -45,7 +45,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className='min-h-screen overflow-x-clip'>{children}</main>
-        <Newsletter/>
+        <Newsletter />
       </body>
     </html>
   );
