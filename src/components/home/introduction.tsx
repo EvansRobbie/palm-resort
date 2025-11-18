@@ -14,15 +14,14 @@ export function Introduction() {
   return (
     <section ref={ref} className=''>
       <div className=''>
-        <div className='grid lg:grid-cols-[1fr_1.2fr_1fr] gap-8 items-center '>
-          {/* Left side - 3 Images stacked */}
+        <div className='grid lg:grid-cols-[1fr_1.2fr_1fr] relative gap-8 items-center '>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className='hidden lg:flex flex-col gap-4'
+            className='hidden lg:flex flex-col gap-4 '
           >
-            <div className='h-135 relative top-0 '>
+            <div className='h-135 absolute w-[30%] inset-0 '>
               <Image
                 src='/Welcome1.jpg'
                 alt='Hotel Reception Lobby'
@@ -41,7 +40,7 @@ export function Introduction() {
           >
             <div className='space-y-2 pt-22'>
               <h2 className='text-2xl md:text-3xl  font-serif font-normal text-foreground leading-tight'>
-                Best Hotel in Kisumu Kenya –
+                Best Hotel in Garrisa Kenya -
               </h2>
               <h3 className='text-5xl md:text-6xl  font-serif font-medium text-foreground leading-none'>
                 Palm Oasis Resort
@@ -51,13 +50,24 @@ export function Introduction() {
               </p>
             </div>
 
-            <p className='text-base tracking-wide text-foreground/80 leading-8 max-w-2xl font-serif'>
-              Palm Oasis Resort, rated amongst the best hotels in Kisumu,
+            <p className='text-sm text-pretty tracking-wide text-foreground/80 leading-8 max-w-2xl font-serif'>
+              Palm Oasis Resort, rated amongst the best hotels in Garissa,
               overlooks the beautiful hills giving clients the serenity, peace
               and comfort they need. The buildings are designed in an English
               colonial style with a luxurious modern twist. The modern rooms,
               landscaping and well-manicured gardens enhance the guest
-              experience.
+              experience.Palm Oasis Resort - Garissa you will experience a
+              quality stay at an affordable price. Located 3 kms from Garissa
+              Town center, it makes the resort easily accessible to our guests.
+              This serene, warm and enchanting destination provides all round
+              relaxation set amid manicured gardens and tranquil greenery giving
+              clients peace and comfort they need. Whether traveling alone or
+              with a group of kids and friends, you will feel comfortable as
+              soon as you walk through the door.We&apos;re designed to deliver
+              the all-important things you value most - a convenient location, a
+              sound night&apos;s sleep, and a great complimentary hot breakfast
+              - all at a quality and price that&apos;s hard to find. No matter
+              the journey, Palm Oasis resort make it possible.
             </p>
 
             <Button

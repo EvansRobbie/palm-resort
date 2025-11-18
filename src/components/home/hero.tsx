@@ -101,7 +101,7 @@ export function Hero() {
             className='max-w-4xl'
           >
             <h1 className='text-4xl md:text-6xl  font-serif font-semibold leading-snug text-primary-foreground mb-6 text-balance'>
-              Absolute Serenity,
+              Absolute Oasis of Serenity,
               <br />
               Peace & Comfort
             </h1>

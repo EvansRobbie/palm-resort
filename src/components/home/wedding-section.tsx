@@ -11,7 +11,11 @@ export function Wedding() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section ref={ref} className='relative max-w-[1800px] mr-auto  w-full '>
+    <section
+      id='weddings'
+      ref={ref}
+      className='relative max-w-[1800px] mr-auto  w-full '
+    >
       <div className='flex flex-row h-full'>
         <motion.div
           initial={{ opacity: 0, x: -50 }}

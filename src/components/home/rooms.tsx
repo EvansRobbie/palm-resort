@@ -8,24 +8,20 @@ import { Button } from '@/components/ui/button';
 
 const rooms = [
   {
-    title: 'Executive Suite',
+    title: '2 Junior Suites',
     image: '/massage-room.jpg',
   },
   {
-    title: 'Superior Deluxe',
+    title: '22 Superior Deluxe',
     image: '/dining-superior.jpg',
   },
   {
-    title: 'Deluxe Room',
+    title: '45 Standard Rooms',
     image: '/deluxe.jpg',
   },
   {
-    title: 'Superior Room',
+    title: '6 Executive Rooms',
     image: '/superior.jpg',
-  },
-  {
-    title: 'Villa Room',
-    image: '/villa.jpg',
   },
 ];
 
@@ -34,7 +30,7 @@ export function Rooms() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section ref={ref} className='py-20 bg-background'>
+    <section id='rooms' ref={ref} className='py-20 bg-background'>
       <div className='container mx-auto px-4'>
         <div className='grid grid-cols-1 md:grid-cols-6 gap-6'>
           <motion.div
@@ -49,10 +45,14 @@ export function Rooms() {
             <h3 className='text-4xl md:text-6xl font-serif font-medium text-foreground mb-6'>
               Rooms
             </h3>
-            <p className='text-base font-serif leading-8 text-muted-foreground mb-8'>
-              With 56 well appointed accommodation rooms. We ensure our service
-              delivery does not only give our guests a memorable experience but
-              also leave as part of the Ciala Resort Family.
+            <p className='text-sm font-serif leading-8 text-muted-foreground mb-8'>
+              Our exquisite and tastefully designed rooms provide you with
+              top-notch amenities and an unforgettable, comfortable stay. The
+              resort boasts 75 well-appointed ensuite guestrooms, which are 22
+              superior rooms, 45 Standard rooms, 6 Executive rooms, and 2 Junior
+              rooms. We ensure our service delivery not only gives our guests a
+              memorable experience but also live as part of the Palm Oasis
+              Resort Family.
             </p>
             <Button className='bg-gold hover:bg-gold/90 text-white w-fit px-8'>
               VIEW ALL
