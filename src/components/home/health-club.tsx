@@ -55,7 +55,7 @@ export function HealthClub() {
                 <h3 className='text-3xl md:text-4xl font-serif font-normal mb-3 transition-transform duration-300 group-hover:-translate-y-2'>
                   {facility.title}
                 </h3>
-                <span className='text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 group-hover:-translate-y-2 traslate-y-0'>
+                <span className='text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 group-hover:-translate-y-2 translate-y-0'>
                   READ MORE
                 </span>
               </div>

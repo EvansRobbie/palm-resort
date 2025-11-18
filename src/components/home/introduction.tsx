@@ -40,7 +40,7 @@ export function Introduction() {
           >
             <div className='space-y-2 pt-22'>
               <h2 className='text-2xl md:text-3xl  font-serif font-normal text-foreground leading-tight'>
-                Best Hotel in Garrisa Kenya -
+                Best Hotel in Garissa Kenya -
               </h2>
               <h3 className='text-5xl md:text-6xl  font-serif font-medium text-foreground leading-none'>
                 Palm Oasis Resort
@@ -56,14 +56,14 @@ export function Introduction() {
               and comfort they need. The buildings are designed in an English
               colonial style with a luxurious modern twist. The modern rooms,
               landscaping and well-manicured gardens enhance the guest
-              experience.Palm Oasis Resort - Garissa you will experience a
+              experience. Palm Oasis Resort - Garissa you will experience a
               quality stay at an affordable price. Located 3 kms from Garissa
               Town center, it makes the resort easily accessible to our guests.
               This serene, warm and enchanting destination provides all round
               relaxation set amid manicured gardens and tranquil greenery giving
               clients peace and comfort they need. Whether traveling alone or
               with a group of kids and friends, you will feel comfortable as
-              soon as you walk through the door.We&apos;re designed to deliver
+              soon as you walk through the door. We&apos;re designed to deliver
               the all-important things you value most - a convenient location, a
               sound night&apos;s sleep, and a great complimentary hot breakfast
               - all at a quality and price that&apos;s hard to find. No matter

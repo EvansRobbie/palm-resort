@@ -47,8 +47,6 @@ export function Navbar() {
               <div className='flex items-center gap-6'>
                 <Link
                   href={`mailto:${DATA.footer.contacts.email}`}
-                  target='_blank'
-                  rel='noopener noreferrer'
                   className='flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors'
                 >
                   <span>📧</span>
@@ -56,8 +54,6 @@ export function Navbar() {
                 </Link>
                 <Link
                   href={`tel:${DATA.footer.contacts.phone}`}
-                  target='_blank'
-                  rel='noopener noreferrer'
                   className='flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors'
                 >
                   <span>📞</span>
