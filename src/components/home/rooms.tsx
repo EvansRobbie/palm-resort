@@ -51,7 +51,7 @@ export function Rooms() {
               resort boasts 75 well-appointed ensuite guestrooms, which are 22
               superior rooms, 45 Standard rooms, 6 Executive rooms, and 2 Junior
               rooms. We ensure our service delivery not only gives our guests a
-              memorable experience but also leave as part of the Palm Oasis
+              memorable experience but also live as part of the Palm Oasis
               Resort Family.
             </p>
             <Button className='bg-gold hover:bg-gold/90 text-white w-fit px-8'>
