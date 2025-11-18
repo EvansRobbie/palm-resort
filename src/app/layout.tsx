@@ -47,10 +47,6 @@ export const metadata: Metadata = {
     'Fine Dining Garissa',
     'Affordable Luxury Hotels Kenya',
   ],
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
   openGraph: {
     title: DATA.title,
     description: DATA.description,
