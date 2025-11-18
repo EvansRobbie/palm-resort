@@ -50,7 +50,7 @@ export function Introduction() {
               </p>
             </div>
 
-            <p className='text-sm tracking-wide text-foreground/80 leading-8 max-w-2xl font-serif'>
+            <p className='text-sm text-pretty tracking-wide text-foreground/80 leading-8 max-w-2xl font-serif'>
               Palm Oasis Resort, rated amongst the best hotels in Garissa,
               overlooks the beautiful hills giving clients the serenity, peace
               and comfort they need. The buildings are designed in an English
