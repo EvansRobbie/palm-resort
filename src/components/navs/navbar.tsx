@@ -53,7 +53,10 @@ export function Navbar() {
                   <span>{DATA.footer.contacts.email}</span>
                 </Link>
                 <Link
-                  href={`tel:${DATA.footer.contacts.phone}`}
+                  href={`tel:${DATA.footer.contacts.phone.replace(
+                    /[\s+]/g,
+                    ''
+                  )}`}
                   className='flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors'
                 >
                   <span>📞</span>
@@ -202,7 +205,10 @@ export function Navbar() {
 
       {/* WhatsApp Float Button */}
       <Link
-        href='https://wa.me/+254710644444'
+        href={`https://wa.me/${DATA.footer.contacts.phone.replace(
+          /[\s+]/g,
+          ''
+        )}`}
         target='_blank'
         rel='noopener noreferrer'
         className='fixed bottom-8 right-8 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110'
