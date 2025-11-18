@@ -5,7 +5,7 @@ export const DATA = {
     'Experience luxury and comfort at Palm Oasis Resort, the best hotel in Garissa, Kenya. Enjoy top-notch amenities, exquisite rooms, and exceptional service for an unforgettable stay.',
   partners: [
     {
-      logo: '/country.jpeg',
+      logo: '/county.jpeg',
       name: 'County Government of Garissa',
     },
     {
