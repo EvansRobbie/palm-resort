@@ -8,6 +8,7 @@ export const DATA = {
       phone: '+254 711 829 899',
       email: 'info@palmoasisco.ke',
       address: 'Garissa',
+      location_address: 'P.O. Box 1054-70100, Garissa, Lamu|Road',
     },
   },
 };
