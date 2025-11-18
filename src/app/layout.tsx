@@ -32,6 +32,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: `${DATA.title} - Best Hotel in Garissa Kenya`,
   description: DATA.description,
+  appleWebApp: {
+    title: 'Palm Oasis Resort',
+  },
   keywords: [
     'Palm Oasis Resort',
     'Best Hotel in Garissa',
@@ -93,9 +96,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <head>
-        <meta name='apple-mobile-web-app-title' content='Palm Oasis Resort' />
-      </head>
       <body
         className={`${geistSans.className} ${geistMono.variable} ${playfair.variable} antialiased`}
       >
