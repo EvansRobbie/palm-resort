@@ -1,4 +1,3 @@
-import { Awards } from '@/components/home/awards';
 import { ConferencesEvents } from '@/components/home/conference-events';
 import { HealthClub } from '@/components/home/health-club';
 import { Hero } from '@/components/home/hero';
@@ -15,7 +14,6 @@ export default function Home() {
       <Rooms />
       <Wedding />
       <HealthClub />
-      <Awards />
     </div>
   );
 }

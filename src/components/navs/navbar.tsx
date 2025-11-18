@@ -45,20 +45,24 @@ export function Navbar() {
               className='hidden md:flex items-center justify-between py-2 text-sm overflow-hidden'
             >
               <div className='flex items-center gap-6'>
-                <a
-                  href='mailto:info@cialaresort.com'
+                <Link
+                  href={`mailto:${DATA.footer.contacts.email}`}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors'
                 >
                   <span>📧</span>
-                  <span>info@cialaresort.com</span>
-                </a>
-                <a
-                  href='tel:0710644444'
+                  <span>{DATA.footer.contacts.email}</span>
+                </Link>
+                <Link
+                  href={`tel:${DATA.footer.contacts.phone}`}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors'
                 >
                   <span>📞</span>
-                  <span>0710644444</span>
-                </a>
+                  <span>{DATA.footer.contacts.phone}</span>
+                </Link>
               </div>
               <div className='flex items-center gap-4'>
                 <Link

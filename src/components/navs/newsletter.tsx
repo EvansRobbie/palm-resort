@@ -98,7 +98,9 @@ export function Newsletter() {
               className='mx-auto invert mb-8'
             />
             <h4 className='text-3xl font-serif font-bold mb-8'>{DATA.title}</h4>
-            <p className='text-sm text-white/60 mb-2'>NAIROBI</p>
+            <p className='text-sm text-white/60 mb-2'>
+              {DATA.footer.contacts.address}
+            </p>
           </motion.div>
         </div>
 
@@ -202,14 +204,14 @@ export function Newsletter() {
               </Link>
               <span className='text-white/40'>|</span>
               <Link
-                href='/terms-conditions'
+                href='#'
                 className='text-white/60 hover:text-gold transition-colors'
               >
                 Terms & Conditions
               </Link>
               <span className='text-white/40'>|</span>
               <Link
-                href='/cookies-policy'
+                href='#'
                 className='text-white/60 hover:text-gold transition-colors'
               >
                 Cookies Policy
@@ -218,8 +220,8 @@ export function Newsletter() {
           </div>
 
           <p className='text-center text-sm text-white/60'>
-            {DATA.title} – Nairobi © {new Date().getFullYear()} All Rights
-            Reserved
+            {DATA.title} - {DATA.footer.contacts.address} ©{' '}
+            {new Date().getFullYear()} All Rights Reserved
           </p>
         </motion.div>
       </div>

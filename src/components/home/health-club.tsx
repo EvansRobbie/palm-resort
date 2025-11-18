@@ -11,17 +11,13 @@ export function HealthClub() {
 
   const facilities = [
     {
-      title: 'The Oak Spa',
-      image: '/massage-room.jpg',
-    },
-    {
       title: 'The Oak Gym',
       image: '/treadmill.jpg',
     },
   ];
 
   return (
-    <section ref={ref} className='py-20 pt-28 '>
+    <section id='health' ref={ref} className='py-20 pt-28 '>
       <div className='container mx-auto px-4'>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -53,15 +49,13 @@ export function HealthClub() {
                 fill
                 className='object-cover transition-transform duration-500 group-hover:scale-110'
               />
-              {/* Dark overlay that becomes more visible on hover */}
               <div className='absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-300' />
 
-              {/* Text content */}
               <div className='absolute inset-0 flex flex-col items-center justify-center text-white'>
                 <h3 className='text-3xl md:text-4xl font-serif font-normal mb-3 transition-transform duration-300 group-hover:-translate-y-2'>
                   {facility.title}
                 </h3>
-                <span className='text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 group-hover:-translate-y-2 traslate-y-0 ease-in-out'>
+                <span className='text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 group-hover:-translate-y-2 traslate-y-0'>
                   READ MORE
                 </span>
               </div>
