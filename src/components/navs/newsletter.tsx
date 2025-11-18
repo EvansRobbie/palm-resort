@@ -8,7 +8,15 @@ import { Input } from '@/components/ui/input';
 import { Checkbox } from '@/components/ui/checkbox';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+  Phone,
+  Mail,
+  MapPin,
+} from 'lucide-react';
 import { DATA } from '@/_data/data';
 
 export function Newsletter() {
@@ -97,10 +105,35 @@ export function Newsletter() {
               height={200}
               className='mx-auto invert mb-8'
             />
-            <h4 className='text-3xl font-serif font-bold mb-8'>{DATA.title}</h4>
-            <p className='text-sm text-white/60 mb-2'>
-              {DATA.footer.contacts.address}
-            </p>
+            <h4 className='text-3xl font-serif font-semibold mb-8'>
+              {DATA.title}
+            </h4>
+            <div className='space-y-4 text-primary-foreground/80'>
+              <div className='flex items-center justify-center gap-3'>
+                <Phone className='w-5 h-5 text-gold flex-shrink-0' />
+                <Link
+                  href={`tel:${DATA.footer.contacts.phone.replace(/\s+/g, '')}`}
+                  className='text-sm hover:text-gold transition-colors'
+                >
+                  {DATA.footer.contacts.phone}
+                </Link>
+              </div>
+              <div className='flex items-center justify-center gap-3'>
+                <Mail className='w-5 h-5 text-gold flex-shrink-0' />
+                <Link
+                  href={`mailto:${DATA.footer.contacts.email}`}
+                  className='text-sm hover:text-gold transition-colors'
+                >
+                  {DATA.footer.contacts.email}
+                </Link>
+              </div>
+              <div className='flex items-center justify-center gap-3'>
+                <MapPin className='w-5 h-5 text-gold flex-shrink-0' />
+                <p className='text-sm'>
+                  {DATA.footer.contacts.location_address}
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
 
@@ -197,7 +230,7 @@ export function Newsletter() {
 
             <div className='flex flex-wrap items-center justify-center gap-4 text-sm'>
               <Link
-                href='/privacy-policy'
+                href='#'
                 className='text-white/60 hover:text-gold transition-colors'
               >
                 Privacy Policy

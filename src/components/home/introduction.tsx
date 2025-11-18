@@ -51,23 +51,23 @@ export function Introduction() {
             </div>
 
             <p className='text-sm text-pretty tracking-wide text-foreground/80 leading-8 max-w-2xl font-serif'>
-              Palm Oasis Resort, rated amongst the best hotels in Garissa,
-              overlooks the beautiful hills giving clients the serenity, peace
-              and comfort they need. The buildings are designed in an English
-              colonial style with a luxurious modern twist. The modern rooms,
-              landscaping and well-manicured gardens enhance the guest
-              experience. Palm Oasis Resort - Garissa you will experience a
-              quality stay at an affordable price. Located 3 kms from Garissa
-              Town center, it makes the resort easily accessible to our guests.
-              This serene, warm and enchanting destination provides all round
-              relaxation set amid manicured gardens and tranquil greenery giving
-              clients peace and comfort they need. Whether traveling alone or
-              with a group of kids and friends, you will feel comfortable as
-              soon as you walk through the door. We&apos;re designed to deliver
-              the all-important things you value most - a convenient location, a
-              sound night&apos;s sleep, and a great complimentary hot breakfast
-              - all at a quality and price that&apos;s hard to find. No matter
-              the journey, Palm Oasis resort make it possible.
+              Palm Oasis Resort, rated amongst the best hotels in Garissa, gives
+              clients the serenity, peace and comfort they need. The buildings
+              are designed in an English colonial style with a luxurious modern
+              twist. The modern rooms, landscaping and well-manicured gardens
+              enhance the guest experience. Palm Oasis Resort - Garissa you will
+              experience a quality stay at an affordable price. Located 3 kms
+              from Garissa Town center, it makes the resort easily accessible to
+              our guests. This serene, warm and enchanting destination provides
+              all round relaxation set amid manicured gardens and tranquil
+              greenery giving clients peace and comfort they need. Whether
+              traveling alone or with a group of kids and friends, you will feel
+              comfortable as soon as you walk through the door. We&apos;re
+              designed to deliver the all-important things you value most - a
+              convenient location, a sound night&apos;s sleep, and a great
+              complimentary hot breakfast - all at a quality and price
+              that&apos;s hard to find. No matter the journey, Palm Oasis resort
+              make it possible.
             </p>
 
             <Button
