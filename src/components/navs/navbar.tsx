@@ -3,11 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'motion/react';
 import { DATA } from '@/_data/data';
 import { cn } from '@/lib/utils';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const navItems = [
   { name: 'ROOMS', href: '#rooms', icon: '🛏️' },
@@ -95,12 +101,41 @@ export function Navbar() {
                   Contact Us
                 </Link>
                 <Button
-                  variant='outline'
+                  variant='secondary'
                   size='sm'
-                  className='border-gold text-gold hover:bg-gold hover:text-white'
+                  className='rounded-[4px] px-6'
+                  asChild
                 >
-                  Invest
+                  <Link href='#hr'>HR</Link>
                 </Button>
+                <Button
+                  size='sm'
+                  className=' rounded-[4px] hover:bg-gold hover:text-white'
+                  asChild
+                >
+                  <Link href='#signin'>Sign In</Link>
+                </Button>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button
+                      variant='outline'
+                      size='sm'
+                      className='rounded-[4px]'
+                    >
+                      <Globe className='w-4 h-4 mr-2' />
+                      Language
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align='end' className='w-40'>
+                    <DropdownMenuItem>English</DropdownMenuItem>
+                    <DropdownMenuItem>Arabic</DropdownMenuItem>
+                    <DropdownMenuItem>Somali</DropdownMenuItem>
+                    <DropdownMenuItem>French</DropdownMenuItem>
+                    <DropdownMenuItem>German</DropdownMenuItem>
+                    <DropdownMenuItem>Portuguese</DropdownMenuItem>
+                    <DropdownMenuItem>Spanish</DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </motion.div>
           )}

@@ -23,7 +23,7 @@ export function Introduction() {
           >
             <div className='h-135 absolute w-[30%] inset-0 '>
               <Image
-                src='/Welcome1.jpg'
+                src='/Welcome.jpeg'
                 alt='Hotel Reception Lobby'
                 fill
                 className='w-full h-full object-cover'
@@ -87,7 +87,7 @@ export function Introduction() {
           >
             <div className='w-80 relative h-90 '>
               <Image
-                src='/Welcome2.jpg'
+                src='/Welcome2.jpeg'
                 alt='Conference Facilities'
                 fill
                 className='w-full h-full object-cover'
