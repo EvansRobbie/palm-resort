@@ -68,6 +68,14 @@ export function Navbar() {
                   <span>📞</span>
                   <span>{DATA.footer.contacts.phone}</span>
                 </Link>
+                <Button
+                  variant='outline'
+                  size='sm'
+                  className='border-gold text-gold hover:bg-gold hover:text-white rounded-[4px]'
+                  asChild
+                >
+                  <Link href='#invest'>Invest</Link>
+                </Button>
               </div>
               <div className='flex items-center gap-4'>
                 <Link

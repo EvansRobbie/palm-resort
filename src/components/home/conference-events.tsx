@@ -1,8 +1,5 @@
 'use client';
 
-import { motion } from 'motion/react';
-import { useInView } from 'motion/react';
-import { useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Carousel,
@@ -12,8 +9,9 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/carousel';
-import React from 'react';
+import { motion, useInView } from 'motion/react';
 import Image from 'next/image';
+import React, { useEffect, useRef } from 'react';
 
 const carouselItems = [
   {
@@ -40,11 +38,6 @@ const carouselItems = [
     id: 5,
     title: 'Social Gatherings',
     image: '/social.jpeg',
-  },
-  {
-    id: 6,
-    title: 'Wedding Receptions',
-    image: '/Welcome3.jpg',
   },
   {
     id: 7,
