@@ -7,19 +7,27 @@ import { BookingWidget } from '../navs/booking-widget';
 
 const heroSlides = [
   {
-    image: '/Banner5.jpg',
+    image: '/Banner-1.jpeg',
     alt: 'Guests enjoying wine with scenic mountain views',
   },
   {
-    image: '/Banner6.jpg',
-    alt: 'Resort pool with lake views',
+    image: '/Banner-2.jpeg',
+    alt: 'Resort garden with palm trees and seating area',
+  },
+  {
+    image: '/Banner-4.jpeg',
+    alt: 'Guests enjoying wine with scenic mountain views',
+  },
+  {
+    image: '/Banner5.jpg',
+    alt: 'Guests enjoying wine with scenic mountain views',
   },
   {
     image: '/Banner3.jpg',
     alt: 'Hotel exterior and landscaped gardens',
   },
   {
-    image: '/Banner6.jpg',
+    image: '/Banner-6.jpeg',
     alt: 'Dining terrace at sunset',
   },
 ];
