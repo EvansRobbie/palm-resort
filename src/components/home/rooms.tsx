@@ -13,15 +13,15 @@ const rooms = [
   },
   {
     title: '22 Superior Deluxe',
-    image: '/dining-superior.jpg',
+    image: '/deluxe.jpeg',
   },
   {
     title: '45 Standard Rooms',
-    image: '/deluxe.jpg',
+    image: '/standard.jpeg',
   },
   {
     title: '6 Executive Rooms',
-    image: '/superior.jpg',
+    image: '/executive.jpeg',
   },
 ];
 

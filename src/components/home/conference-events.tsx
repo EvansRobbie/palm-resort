@@ -19,7 +19,7 @@ const carouselItems = [
   {
     id: 1,
     title: 'Conference Halls',
-    image: '/Banner6.jpg',
+    image: '/conference.jpeg',
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const carouselItems = [
   {
     id: 3,
     title: 'Team Building',
-    image: '/Banner6.jpg',
+    image: '/team-building.jpeg',
   },
   {
     id: 4,
@@ -39,17 +39,17 @@ const carouselItems = [
   {
     id: 5,
     title: 'Social Gatherings',
-    image: '/Welcome2.jpg',
+    image: '/social.jpeg',
   },
   {
     id: 6,
     title: 'Wedding Receptions',
-    image: '/Welcome1.jpg',
+    image: '/Welcome3.jpg',
   },
   {
     id: 7,
-    title: 'Outdoor Events',
-    image: '/Banner5.jpg',
+    title: 'Outdoor Catering',
+    image: '/catering.jpeg',
   },
 ];
 
