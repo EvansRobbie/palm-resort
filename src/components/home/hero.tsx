@@ -69,7 +69,7 @@ export function Hero() {
               className='w-full h-full object-cover'
             />
           </AnimatePresence>
-          <div className='absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black/40' />
+          <div className='absolute inset-0 bg-linear-to-l from-transparent via-transparent to-black/70' />
         </div>
 
         {/* Carousel Controls */}
@@ -113,6 +113,20 @@ export function Hero() {
               <br />
               Peace & Comfort
             </h1>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className='flex items-center gap-3 mb-8'
+            >
+              <p className='text-white/90 text-sm md:text-base tracking-wide'>
+                BEYOND IMAGINABLE
+                <br />
+                <span className='text-xs md:text-sm font-light'>
+                  Enjoy Your Vacation With Us
+                </span>
+              </p>
+            </motion.div>
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
